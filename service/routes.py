@@ -84,7 +84,7 @@ def list_accounts():
 ######################################################################
 
 
-app.route("/accounts/<int:account_id>", methods=["GET"])
+@app.route("/accounts/<int:account_id>", methods=["GET"])
 def get_accounts(account_id):
     """
     Reads an Account
@@ -123,7 +123,6 @@ def update_accounts(account_id):
 ######################################################################
 # DELETE AN ACCOUNT
 ######################################################################
-
 
 
 @app.route("/accounts/<int:account_id>", methods=["DELETE"])
