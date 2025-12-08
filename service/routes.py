@@ -13,6 +13,8 @@ from . import app  # Import Flask application
 ############################################################
 # Health Endpoint
 ############################################################
+
+
 @app.route("/health")
 def health():
     """Health Status"""
@@ -22,6 +24,8 @@ def health():
 ######################################################################
 # GET INDEX
 ######################################################################
+
+
 @app.route("/")
 def index():
     """Root URL response"""
@@ -65,7 +69,6 @@ def create_accounts():
 
 
 @app.route("/accounts", methods=["GET"])
-
 def list_accounts():
     """
     List all Accounts
